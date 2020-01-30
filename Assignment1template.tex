@@ -1,0 +1,79 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage{amsmath}
+\usepackage{fullpage}
+
+\parindent 0pt
+\parskip 3mm
+
+\begin{document}
+
+\title{CPSC 313 --- Winter 2020 \\ [3pt]
+     Assignment 1 ---   Finite Automata and Regular Languages}	
+\date{}
+\author{Put your name here, inside the author field}
+\date{Put your student ID number here, inside the date field}
+
+\maketitle
+
+
+\begin{enumerate}
+\item \textbf{The Language of a 2-State DFA}
+
+Let $M = (Q, \Sigma, \delta, q_0, F)$ be a DFA and put $L = L(M)$. By considering the different
+    possibilities for the set of final states $F$ of $M$, prove that if $Q$ consists of exactly
+    two states, then one of the following hold (note that (b) and (c) are not mutually
+    exclusive):
+    \begin{enumerate}
+        \item $L$ is empty.
+        \item $L$ contains the empty string.
+        \item $L$ contains a string of length 1.
+    \end{enumerate}
+
+\textbf{Solution.}
+
+\newpage
+
+\item \textbf{DFA Design and Analysis}
+\begin{enumerate}
+\item Design a DFA $M$ with at most 4 states for the language
+%
+\[ L = \{ w \in \{ 0, 1 \}^* \mid \text{ $w$ contains at least one 0 and $|w|$ is even\,} \}. \]
+%
+Present your DFA in the form of a state diagram and include a brief rationale for its
+design.
+
+
+\textbf{Solution.}
+
+\newpage
+
+\item Prove that your DFA $M$ of part (a) accepts the language $L$, i.e.\ prove that $L(M)
+    = L$.
+
+\textbf{Solution.}
+
+\end{enumerate}
+
+\newpage
+
+\item \textbf{NFA Design and Analysis}
+\begin{enumerate}
+\item Design an NFA $N$ with at most 5 states for the language
+%
+\[ L = \{ w \in \{ 0, 1 \}^* \mid \text{ $w$ contains the substring $1011$ or the substring $100$\,} \}. \]
+%
+Present your NFA in the form of a state diagram and include a brief rationale for its
+design.
+
+\textbf{Solution.}
+
+\newpage
+
+\item Prove that your NFA $N$ of part (a) accepts the language $L$, i.e.\ prove that $L(N)
+    = L$.
+
+\textbf{Solution.}
+
+\end{enumerate}
+\end{enumerate}
+\end{document}
